@@ -63,7 +63,7 @@ async function clicking(e) {
   // console.log(e.parentElement);
   var lat = parent.getAttribute("lat");
   var lon = parent.getAttribute("lng");
-  var api_key = "02c0a4cb6d534fb8ec504bd1d2f69fe2";
+  var api_key = "b1797eda98ae3d9a652f0b7b807c80ce";
   var weather_api = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${api_key}`;
   var weather_url = fetch(weather_api);
   var out1 = await (await weather_url).json();
